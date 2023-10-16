@@ -58,7 +58,7 @@ input
 	border-radius: 5px;
 }
 
-button
+.myButton
 {
 	width: 332px;
 	height: 50px;
@@ -66,8 +66,14 @@ button
 	background: #000;
 	font-weight: lighter;
 	color: #fff;
-	border: 0px;
+	border-width: 1px;
 	border-radius: 5px;
+    border-color:#fff;
+}
+.myButton:hover{
+    background:#fff;
+    color:#000;
+    border-color:#000;
 }
 
 ul {
