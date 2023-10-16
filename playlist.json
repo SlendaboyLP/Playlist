@@ -1,5 +1,4 @@
-{
-    "playlists": [
+[
       {
         "id": 1,
         "name": "Party Playlist",
@@ -46,6 +45,6 @@
           }
         ]
         }
-    ]
-}
+]
+
   
