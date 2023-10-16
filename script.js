@@ -2,23 +2,23 @@ document.addEventListener("DOMContentLoaded", function () {
     const playlist = document.getElementById("playlist");
     const addSongForm = document.getElementById("addSongForm");
 
-    // Funktion zum Laden der Playlist-Daten
-    function loadPlaylist() {
-        fetch("playlist.json")
-            .then((response) => response.json())
-            .then((data) => {
-                data.forEach((song) => {
-                    const listItem = document.createElement("li");
-                    listItem.innerHTML = `<strong>${song.songTitle}</strong> von ${song.artist}, Album: ${song.album}`;
-                    playlist.appendChild(listItem);
-                });
-            })
-            .catch((error) => {
-                console.error("Fehler beim Laden der Playlist: " + error);
-            });
-    }
 
-    loadPlaylist();
+
+    var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            
+            const playlistData = JSON.parse(xhttp.responseText);
+            playlistData.forEach(song => {
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<strong>${song.songTitle}</strong> von ${song.artist}, Album: ${song.album}`;
+                playlist.appendChild(listItem);
+            })
+            }
+        };
+        xhttp.open("GET", "playlist.json", true);
+        xhttp.send();
+
 
     // Funktion zum Hinzufügen eines neuen Songs zur Playlist
     addSongForm.addEventListener("submit", function (event) {
