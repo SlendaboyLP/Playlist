@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Playlists</title>
 </head>
 <body>
+    <h1>Playlist</h1>
 
+   
+    <form id="addSongForm">
+        <label for="songTitle">Songtitel:</label>
+        <input type="text" id="songTitle" required>
+        <label for="artist">Interpret:</label>
+        <input type="text" id="artist" required>
+        <label for="album">Album:</label>
+        <input type="text" id="album" required>
+        <button type="submit">Song hinzufügen</button>
+    </form>
+
+    
+    <ul id="playlist"></ul>
+
+    <script src="script.js"></script>
 </body>
 </html>
