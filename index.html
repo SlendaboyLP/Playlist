@@ -7,18 +7,17 @@
     <title>Playlists</title>
 </head>
 <body>
-    <h1>Playlist</h1>
+    <h2>Playlist</h2>
 
-   
-    <form id="addSongForm">
-        <label for="songTitle">Songtitel:</label>
-        <input type="text" id="songTitle" required>
-        <label for="artist">Interpret:</label>
-        <input type="text" id="artist" required>
-        <label for="album">Album:</label>
-        <input type="text" id="album" required>
-        <button type="submit">Song hinzufügen</button>
-    </form>
+   <div class="addSongCSS">
+        <form id="addSongForm">
+            <input type="text" id="songTitle" placeholder="Songtitel" required>
+            <input type="text" id="artist" placeholder="Interpret" required>
+            <input type="text" id="album" placeholder="Album" required>
+            <button type="submit">Song hinzufügen</button>
+        </form>
+   </div>
+    
 
     
     <ul id="playlist"></ul>
