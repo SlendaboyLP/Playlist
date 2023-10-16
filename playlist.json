@@ -1,50 +1,7 @@
 [
-      {
-        "id": 1,
-        "name": "Party Playlist",
-        "songs": [
-          {
-            "title": "Song 1",
-            "length": "3:45"
-          },
-          {
-            "title": "Song 2",
-            "length": "4:20"
-          },
-          {
-            "title": "Song 3",
-            "length": "2:55"
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "name": "Relaxation Playlist",
-        "songs": [
-          {
-            "title": "Chill Song",
-            "length": "5:30"
-          },
-          {
-            "title": "Meditation Music",
-            "length": "7:15"
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "name": "Workout Playlist",
-        "songs": [
-          {
-            "title": "Energetic Track",
-            "length": "3:10"
-          },
-          {
-            "title": "Pump-Up Song",
-            "length": "4:45"
-          }
-        ]
-        }
+  {
+      "songTitle": "Song 1",
+      "artist": "Interpret 1",
+      "album": "Album 1"
+  }
 ]
-
-  
